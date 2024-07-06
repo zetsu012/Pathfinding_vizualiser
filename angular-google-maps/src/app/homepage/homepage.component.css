@@ -1,0 +1,14 @@
+.homepage {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+  
+h1, p {
+    margin: 0;
+}
+  
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  

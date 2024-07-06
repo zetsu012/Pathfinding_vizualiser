@@ -1,16 +1,13 @@
-<!-- <nav class="navbar">
-    <button class="btn btn-primary" (click)="triggerPathfinding()">Start Pathfinding</button>
-</nav> -->
-
-
 <div class="navbar">
-    <select [(ngModel)]="selectedAlgorithm" class="form-control">
-      <option value="bfs">BFS</option>
-      <option value="dfs">DFS</option>
-      <option value="dijkstra">Dijkstra</option>
-      <option value="a-star">A*</option>
-    </select>
-    
-    <button class="btn btn-primary" (click)="triggerPathfinding()">Start Pathfinding</button>
+  <h1 class="navbar-heading">Path Finding Visualizer</h1>
+  <div class="controls">
+      <select [(ngModel)]="selectedAlgorithm" class="form-control dropdown">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+          <option value="dijkstra">Dijkstra</option>
+          <option value="a-star">A*</option>
+      </select>
+      <button class="btn btn-primary" (click)="triggerPathfinding()">Start Pathfinding</button>
+      <button class="btn btn-secondary" (click)="resetPage()">Reset</button>
+  </div>
 </div>
-  

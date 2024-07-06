@@ -15,4 +15,8 @@ export class NavbarComponent {
     console.log(this.selectedAlgorithm);
     this.pathfindingTriggered.emit(this.selectedAlgorithm);
   }
+  resetPage() {
+    location.reload();
+}
+
 }

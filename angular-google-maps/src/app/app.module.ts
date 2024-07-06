@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { VisualiserComponent } from './visualiser/visualiser.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VisualiserComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<app-navbar (pathfindingTriggered)="startPathfinding($event)"></app-navbar>
+<div class="grid">
+  <div *ngFor="let row of grid; let rowIndex = index" class="row">
+    <div
+      *ngFor="let cell of row; let colIndex = index"
+      [ngClass]="{
+        'cell': true,
+        'source': isSource(rowIndex, colIndex),
+        'destination': isDestination(rowIndex, colIndex),
+        'obstacle': isObstacle(rowIndex, colIndex),
+        'visited': isVisited(rowIndex, colIndex),
+        'path': isPath(rowIndex, colIndex)
+      }"
+      (click)="selectCell(rowIndex, colIndex)"
+    ></div>
+  </div>
+</div>

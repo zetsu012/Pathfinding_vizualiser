@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(50, 50px);
+    width: 100%;
+  }
+  
+  .row {
+    display: contents;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #999;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    cursor: pointer;
+  }
+  
+  .cell.source {
+    background-color: green;
+  }
+  
+  .cell.destination {
+    background-color: red;
+  }
+  
+  .cell.obstacle {
+    background-color: black;
+  }
+  
+  .cell.visited {
+    background-color: #87ceeb;
+  }
+  
+  .cell.path {
+    background-color: yellow;
+  }
+  
+  @media (max-width: 600px) {
+    .cell {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  

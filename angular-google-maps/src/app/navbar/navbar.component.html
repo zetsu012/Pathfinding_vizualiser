@@ -1,0 +1,16 @@
+<!-- <nav class="navbar">
+    <button class="btn btn-primary" (click)="triggerPathfinding()">Start Pathfinding</button>
+</nav> -->
+
+
+<div class="navbar">
+    <select [(ngModel)]="selectedAlgorithm" class="form-control">
+      <option value="bfs">BFS</option>
+      <option value="dfs">DFS</option>
+      <option value="dijkstra">Dijkstra</option>
+      <option value="a-star">A*</option>
+    </select>
+    
+    <button class="btn btn-primary" (click)="triggerPathfinding()">Start Pathfinding</button>
+</div>
+  
